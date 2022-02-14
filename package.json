@@ -1,8 +1,9 @@
 {
   "name": "cdk-edgedb",
+  "description": "Using Aurora PostgreSQL and Fargate provision a highly-available EdgeDB database deployment that is accessible from the internet.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/aaron/cdk-edgedb.git"
+    "url": "https://github.com/aaronbrighton/cdk-edgedb.git"
   },
   "scripts": {
     "build": "npx projen build",
@@ -32,7 +33,7 @@
   },
   "author": {
     "name": "Aaron Brighton",
-    "email": "aaron@aaronbrighton.ca",
+    "url": "https://aaronbrighton.ca/",
     "organization": false
   },
   "devDependencies": {
@@ -40,7 +41,7 @@
     "@types/node": "^12",
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
-    "aws-cdk-lib": "2.1.0",
+    "aws-cdk-lib": "2.12.0",
     "constructs": "10.0.5",
     "eslint": "^8",
     "eslint-import-resolver-node": "^0.3.6",
@@ -59,10 +60,14 @@
     "typescript": "^4.5.5"
   },
   "peerDependencies": {
-    "aws-cdk-lib": "^2.1.0",
+    "aws-cdk-lib": "^2.12.0",
     "constructs": "^10.0.5"
   },
+  "dependencies": {
+    "cdk-lets-encrypt": "^1.0.1"
+  },
   "keywords": [
+    "aws-cdk",
     "cdk"
   ],
   "main": "lib/index.js",

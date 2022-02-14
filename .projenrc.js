@@ -1,15 +1,20 @@
 const { awscdk } = require('projen');
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'Aaron Brighton',
-  authorAddress: 'aaron@aaronbrighton.ca',
-  cdkVersion: '2.1.0',
+  authorAddress: 'https://aaronbrighton.ca/',
+  cdkVersion: '2.12.0',
   defaultReleaseBranch: 'main',
   name: 'cdk-edgedb',
-  repositoryUrl: 'https://github.com/aaron/cdk-edgedb.git',
+  repositoryUrl: 'https://github.com/aaronbrighton/cdk-edgedb.git',
+  keywords: [
+    'aws-cdk',
+  ],
+  releaseToNpm: true,
+  publishDryRun: true,
 
-  // deps: [],                /* Runtime dependencies of this module. */
-  // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
-  // devDeps: [],             /* Build dependencies for this module. */
-  // packageName: undefined,  /* The "name" in package.json. */
+  deps: [
+    'cdk-lets-encrypt',
+  ],
+  description: 'Using Aurora PostgreSQL and Fargate provision a highly-available EdgeDB database deployment that is accessible from the internet.',
 });
 project.synth();
