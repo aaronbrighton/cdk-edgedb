@@ -1,5 +1,7 @@
 # cdk-edgedb
 
+See [cdk-edgedb-demo](https://github.com/aaronbrighton/cdk-edgedb-demo) for a demo service making use of this construct.
+
 ![Architecture](docs/cdk-edgedb-architecture.png)
 
 ## Usage (within a CDK Application)
@@ -29,6 +31,24 @@ const edgeDB = new edgedb.EdgeDB(this, 'EdgeDB', {
         name: 'edgedb.yourdomain.com',
         email: 'yourname@emailprovider.com',
     },
+});
+```
+
+### Using auto-generated NLB (Network Load Balancer) endpoint and self-signed certificates
+
+```
+import * as edgedb from 'cdk-edgedb';
+...
+const edgeDB = new edgedb.EdgeDB(this, 'EdgeDB');
+```
+
+### Turning off high availability (single EdgeDB/Aurora instance instead of two)
+
+```
+import * as edgedb from 'cdk-edgedb';
+...
+const edgeDB = new edgedb.EdgeDB(this, 'EdgeDB', {
+    highAvailability: false,
 });
 ```
 
