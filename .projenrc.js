@@ -10,7 +10,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
     'aws-cdk',
   ],
   releaseToNpm: true,
-  publishDryRun: true,
+  majorVersion: 1,
 
   deps: [
     'cdk-lets-encrypt',
