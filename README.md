@@ -20,9 +20,9 @@ npm install cdk-edgedb
 Where `hostedZoneId` and `zoneName` match a domain that exists within your AWS account as a Route53 hosted zone.
 
 ```
-import * as EdgeDB from 'cdk-edgedb';
+import * as edgedb from 'cdk-edgedb';
 ...
-const edgeDb = new EdgeDb(this, 'EdgeDB', {
+const edgeDB = new edgedb.EdgeDB(this, 'EdgeDB', {
     customDomain: {
         hostedZoneId: 'ZRZFDEAGRDZ0K',
         zoneName: 'yourdomain.com',

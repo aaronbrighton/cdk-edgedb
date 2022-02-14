@@ -49,7 +49,7 @@ export interface EdgeDBProps {
 
 }
 
-export class EdgeDb extends Construct {
+export class EdgeDB extends Construct {
 
   /**
    * FQDN of the Network Load Balancer used as part of the EdgeDB deployment, you can connect to query EdgeDB from this endpoint.
