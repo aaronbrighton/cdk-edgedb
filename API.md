@@ -2,37 +2,37 @@
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### EdgeDb <a name="EdgeDb" id="cdk-edgedb.EdgeDb"></a>
+### EdgeDB <a name="EdgeDB" id="cdk-edgedb.EdgeDB"></a>
 
-#### Initializers <a name="Initializers" id="cdk-edgedb.EdgeDb.Initializer"></a>
+#### Initializers <a name="Initializers" id="cdk-edgedb.EdgeDB.Initializer"></a>
 
 ```typescript
-import { EdgeDb } from 'cdk-edgedb'
+import { EdgeDB } from 'cdk-edgedb'
 
-new EdgeDb(scope: Construct, id: string, props?: EdgeDBProps)
+new EdgeDB(scope: Construct, id: string, props?: EdgeDBProps)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-edgedb.EdgeDb.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
-| <code><a href="#cdk-edgedb.EdgeDb.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#cdk-edgedb.EdgeDb.Initializer.parameter.props">props</a></code> | <code><a href="#cdk-edgedb.EdgeDBProps">EdgeDBProps</a></code> | *No description.* |
+| <code><a href="#cdk-edgedb.EdgeDB.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
+| <code><a href="#cdk-edgedb.EdgeDB.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#cdk-edgedb.EdgeDB.Initializer.parameter.props">props</a></code> | <code><a href="#cdk-edgedb.EdgeDBProps">EdgeDBProps</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="cdk-edgedb.EdgeDb.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="cdk-edgedb.EdgeDB.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="cdk-edgedb.EdgeDb.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="cdk-edgedb.EdgeDB.Initializer.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-##### `props`<sup>Optional</sup> <a name="props" id="cdk-edgedb.EdgeDb.Initializer.parameter.props"></a>
+##### `props`<sup>Optional</sup> <a name="props" id="cdk-edgedb.EdgeDB.Initializer.parameter.props"></a>
 
 - *Type:* <a href="#cdk-edgedb.EdgeDBProps">EdgeDBProps</a>
 
@@ -42,11 +42,11 @@ new EdgeDb(scope: Construct, id: string, props?: EdgeDBProps)
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-edgedb.EdgeDb.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#cdk-edgedb.EdgeDB.toString">toString</a></code> | Returns a string representation of this construct. |
 
 ---
 
-##### `toString` <a name="toString" id="cdk-edgedb.EdgeDb.toString"></a>
+##### `toString` <a name="toString" id="cdk-edgedb.EdgeDB.toString"></a>
 
 ```typescript
 public toString(): string
@@ -58,21 +58,21 @@ Returns a string representation of this construct.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#cdk-edgedb.EdgeDb.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#cdk-edgedb.EdgeDB.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="cdk-edgedb.EdgeDb.isConstruct"></a>
+##### ~~`isConstruct`~~ <a name="isConstruct" id="cdk-edgedb.EdgeDB.isConstruct"></a>
 
 ```typescript
-import { EdgeDb } from 'cdk-edgedb'
+import { EdgeDB } from 'cdk-edgedb'
 
-EdgeDb.isConstruct(x: any)
+EdgeDB.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
 
-###### `x`<sup>Required</sup> <a name="x" id="cdk-edgedb.EdgeDb.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="cdk-edgedb.EdgeDB.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -84,13 +84,13 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-edgedb.EdgeDb.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#cdk-edgedb.EdgeDb.property.endpoint">endpoint</a></code> | <code>string</code> | FQDN of the Network Load Balancer used as part of the EdgeDB deployment, you can connect to query EdgeDB from this endpoint. |
-| <code><a href="#cdk-edgedb.EdgeDb.property.secret">secret</a></code> | <code>aws-cdk-lib.aws_secretsmanager.Secret</code> | Secrets Manager secret containing the automatically generated EdgeDB server credentials. |
+| <code><a href="#cdk-edgedb.EdgeDB.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#cdk-edgedb.EdgeDB.property.endpoint">endpoint</a></code> | <code>string</code> | FQDN of the Network Load Balancer used as part of the EdgeDB deployment, you can connect to query EdgeDB from this endpoint. |
+| <code><a href="#cdk-edgedb.EdgeDB.property.secret">secret</a></code> | <code>aws-cdk-lib.aws_secretsmanager.Secret</code> | Secrets Manager secret containing the automatically generated EdgeDB server credentials. |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="cdk-edgedb.EdgeDb.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="cdk-edgedb.EdgeDB.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -102,7 +102,7 @@ The tree node.
 
 ---
 
-##### `endpoint`<sup>Required</sup> <a name="endpoint" id="cdk-edgedb.EdgeDb.property.endpoint"></a>
+##### `endpoint`<sup>Required</sup> <a name="endpoint" id="cdk-edgedb.EdgeDB.property.endpoint"></a>
 
 ```typescript
 public readonly endpoint: string;
@@ -114,7 +114,7 @@ FQDN of the Network Load Balancer used as part of the EdgeDB deployment, you can
 
 ---
 
-##### `secret`<sup>Required</sup> <a name="secret" id="cdk-edgedb.EdgeDb.property.secret"></a>
+##### `secret`<sup>Required</sup> <a name="secret" id="cdk-edgedb.EdgeDB.property.secret"></a>
 
 ```typescript
 public readonly secret: Secret;
